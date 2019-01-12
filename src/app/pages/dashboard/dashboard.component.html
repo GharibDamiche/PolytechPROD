@@ -1,0 +1,95 @@
+
+<div class="row">
+  <div class="col-xxxl-3 col-md-6">
+    <nb-card> <nb-card-header> LANCEMENT / ARRET PRODUCTION  </nb-card-header>
+         <nb-card-body>
+           <ngx-status-card title="" [on]=false offText="LANCER LA PRODUCTION" onText="ARRETER LA PRODUCTION" (state)="start($event)" type="danger" >
+
+             <i class="nb-power"></i>
+            </ngx-status-card>
+</nb-card-body>
+     </nb-card>
+       </div>
+       </div>
+       <div class="row">
+  <div class="col-xxxl-3 col-md-6">
+    <nb-card> <nb-card-header>    AD1    -   [MC PRO]</nb-card-header>
+         <nb-card-body>
+                  <ngx-status-card *ngIf=hide title="TRS " [on]=false offText="Travail en pause" onText="Travail en cours" (state)="workAD1($event)"  type="success" >
+                    <i class="nb-lightbulb"></i>
+                  </ngx-status-card>
+                  <br><br><br>
+                  <ngx-status-card *ngIf=hide title="REP" [on]=false offText="Article hors poste" onText="Article en poste" (state)="workOp1($event)"  type="warning" >
+                    <i class="nb-compose"></i>
+                  </ngx-status-card>
+          </nb-card-body>
+
+
+     </nb-card>
+       </div>
+     <div class="col-xxxl-3 col-md-6">
+     <nb-card> <nb-card-header>AD2  - [MS FAM]</nb-card-header>
+          <nb-card-body>
+                   <ngx-status-card *ngIf=hide title="TRS " [on]=false offText="Travail en pause" onText="Travail en cours" (state)="workAD2($event)"  type="success" >
+                     <i class="nb-lightbulb"></i>
+                   </ngx-status-card>
+                   <br><br><br>
+                   <ngx-status-card *ngIf=hide title="REP" [on]=false offText="Article hors poste" onText="Article en poste" (state)="workOp1($event)"  type="warning" >
+                     <i class="nb-compose"></i>
+                   </ngx-status-card>
+           </nb-card-body>
+      </nb-card>
+  </div>
+      <div class="col-xxxl-3 col-md-6">
+      <nb-card> <nb-card-header>ACD</nb-card-header>
+           <nb-card-body>
+                    <ngx-status-card *ngIf=hide  title="TRS " [on]=false offText="Travail en pause" onText="Travail en cours" (state)="workACD($event)"  type="success" >
+                      <i class="nb-lightbulb"></i>
+                    </ngx-status-card>
+                    <br><br><br>
+                    <ngx-status-card *ngIf=hide title="REP" [on]=false offText="Article hors poste" onText="Article en poste" (state)="workACD($event)"  type="warning" >
+                      <i class="nb-compose"></i>
+                    </ngx-status-card>
+            </nb-card-body>
+       </nb-card>
+  </div>
+       <div class="col-xxxl-3 col-md-6">
+       <nb-card> <nb-card-header>ACE1 - [MC PRO]</nb-card-header>
+            <nb-card-body>
+                     <ngx-status-card *ngIf=hide title="TRS " [on]=false offText="Travail en pause" onText="Travail en cours" (state)="workACE1($event)"  type="success" >
+                       <i class="nb-lightbulb"></i>
+                     </ngx-status-card>
+                     <br><br><br>
+                     <ngx-status-card *ngIf=hide title="REP" [on]=false offText="Article hors poste" onText="Article en poste"  type="warning" >
+                       <i class="nb-compose"></i>
+                     </ngx-status-card>
+             </nb-card-body>
+        </nb-card>
+  </div>
+  <div class="col-xxxl-3 col-md-6">
+  <nb-card> <nb-card-header>ACE2 - [MS PRO]</nb-card-header>
+       <nb-card-body>
+                <ngx-status-card *ngIf=hide title="TRS " [on]=false offText="Travail en pause" onText="Travail en cours" (state)="workACE2($event)"  type="success" >
+                  <i class="nb-lightbulb"></i>
+                </ngx-status-card>
+                <br><br><br>
+                <ngx-status-card *ngIf=hide title="REP" [on]=false offText="Article hors poste" onText="Article en poste" (state)="workOp1($event)"  type="warning" >
+                  <i class="nb-compose"></i>
+                </ngx-status-card>
+        </nb-card-body>
+   </nb-card>
+</div>
+   <div class="col-xxxl-3 col-md-6">
+   <nb-card> <nb-card-header>ACC</nb-card-header>
+        <nb-card-body>
+                 <ngx-status-card *ngIf=hide title="TRS " [on]=false offText="Travail en pause" onText="Travail en cours" (state)="workACC($event)"  type="success" >
+                   <i class="nb-lightbulb"></i>
+                 </ngx-status-card>
+                 <br><br><br>
+                 <ngx-status-card *ngIf=hide title="REP" [on]=false offText="Article hors poste" onText="Article en poste" (state)="workOp1($event)"  type="warning" >
+                   <i class="nb-compose"></i>
+                 </ngx-status-card>
+         </nb-card-body>
+    </nb-card>
+</div>
+    </div>

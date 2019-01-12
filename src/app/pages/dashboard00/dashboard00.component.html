@@ -1,0 +1,57 @@
+
+<div class="row">
+  <div class="col-xxxl-3 col-md-6">
+    <nb-card> <nb-card-header>OPERATEUR 1</nb-card-header>
+         <nb-card-body>
+           <ngx-status-card title="START WORK" [on]=false offText="WORK STOPPED" onText="WORK STARTED" (state)="startOp1($event)" type="danger" >
+            
+             <i class="nb-power"></i>
+            </ngx-status-card>
+                  <ngx-status-card *ngIf=startop1 title="WORKING" [on]=false offText="WORK PAUSED" onText="IN PROGRESS" (state)="workOp1($event)"  type="success" >
+                    <i class="nb-lightbulb"></i>
+                  </ngx-status-card>
+          </nb-card-body>
+          <br><br><br><br>
+          <ngx-status-card *ngIf=startop1 title="REP MEASURE" [on]=false offText="NOT HERE" onText="HERE" (state)="workOp1($event)"  type="warning" >
+            <i class="nb-compose"></i>
+          </ngx-status-card>
+
+     </nb-card>
+       </div>
+     <div class="col-xxxl-3 col-md-6">
+     <nb-card> <nb-card-header>OPERATEUR 2</nb-card-header>
+          <nb-card-body>
+            <ngx-status-card title="START WORK" [on]=false offText="WORK STOPPED" onText="WORK STARTED" (state)="startOp2($event)" type="warning" >
+              <i class="nb-power"></i>
+             </ngx-status-card>
+                   <ngx-status-card *ngIf=startop2 title="WORKING" [on]=false offText="WORK PAUSED" onText="IN PROGRESS" (state)="workOp2($event)"  type="primary" >
+                     <i class="nb-lightbulb"></i>
+                   </ngx-status-card>
+           </nb-card-body>
+      </nb-card>
+  </div>
+      <div class="col-xxxl-3 col-md-6">
+      <nb-card> <nb-card-header>OPERATEUR 3</nb-card-header>
+           <nb-card-body>
+             <ngx-status-card title="START WORK" [on]=false offText="WORK STOPPED" onText="WORK STARTED" (state)="startOp3($event)" type="warning" >
+               <i class="nb-power"></i>
+              </ngx-status-card>
+                    <ngx-status-card *ngIf=startop3 title="WORKING" [on]=false offText="WORK PAUSED" onText="IN PROGRESS" (state)="workOp3($event)"  type="primary" >
+                      <i class="nb-lightbulb"></i>
+                    </ngx-status-card>
+            </nb-card-body>
+       </nb-card>
+  </div>
+       <div class="col-xxxl-3 col-md-6">
+       <nb-card> <nb-card-header>OPERATEUR 4</nb-card-header>
+            <nb-card-body>
+              <ngx-status-card title="START WORK" [on]=false offText="WORK STOPPED" onText="WORK STARTED" (state)="startOp4($event)" type="warning" >
+                <i class="nb-power"></i>
+               </ngx-status-card>
+                     <ngx-status-card *ngIf=startop4 title="WORKING" [on]=false offText="WORK PAUSED" onText="IN PROGRESS" (state)="workOp4($event)"  type="primary" >
+                       <i class="nb-lightbulb"></i>
+                     </ngx-status-card>
+             </nb-card-body>
+        </nb-card>
+  </div>
+    </div>
